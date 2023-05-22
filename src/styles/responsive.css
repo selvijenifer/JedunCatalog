@@ -1,0 +1,219 @@
+
+/* minimal layar ukuran sedang */
+@media screen and (min-width: 700px){
+    #restaurants{
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 32px;
+    }
+    
+    .lazyload-list{
+      width: 100%;
+      height: 30vw;
+      align-items: center;
+    }
+
+    .logo{
+      width:25%;
+      height: 25%;
+    }
+  
+    .hero__title{
+      font-size: 35px;
+    }
+  
+    .hero__tagline{
+      font-size: 18px;
+    }
+  
+    img.img1{
+      width: 42vw;
+    }
+    
+    .restaurant-list__content p{
+      font-size: 18px;
+    }
+  
+    .restaurant-list__content h3 a{
+      font-size: 22px;
+    }
+  }
+  
+
+  @media screen and (max-width: 880px){
+    .restaurant__info #menu{
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+
+  /* minimal layar ukuran besar */
+  @media screen and (min-width: 1200px){
+    #restaurants{
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 32px;
+    } 
+  
+    .logo{
+      width: 20%;
+      height: 20%;
+    }
+  
+    .hero{
+      min-width: 1000px;
+    }
+  
+    .content{
+      padding: 32px;
+      flex-direction: row;
+    }
+  
+    img.img1{
+      width: 27vw;
+    }
+  }
+  
+  /*maksimal layar ukuran kecil*/
+  @media screen and (max-width: 700px){
+    .navbar-container{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #146C94;
+      margin: 0;
+    }
+    
+  
+    #drawer{
+      text-align: center;
+      display: flex;
+    }
+  
+    .drawer-list{
+      position: fixed;
+      top: 0;
+      padding: 10px 0 0 0;
+      width: 250px;
+      height: 25%;
+      transform: translate(-350px, 0);
+      transition: transform 0.3s ease-in-out;
+      background-color:#ffffff;
+    }
+    
+    .drawer-list.open{
+      transform: translate(0,0);
+    }
+  
+    .logo{
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      width: 50%;
+      height: 50%;
+      padding: 0;
+      margin: auto;
+    }
+  
+    button#hamburger{
+      display: block;
+      font-size: 32px;
+      text-decoration: none;
+      color: rgb(255, 255, 255);
+      margin: 0 0 0 20px; 
+      position: absolute;
+      z-index: 1;
+      left: 0;
+      min-width: 44px;
+      min-height: 44px;
+      background-color: transparent;
+      border: none;
+      outline: none;
+    }
+    
+    .nav__list {
+      list-style-type: none;
+      padding: 0 16px;
+      display: flex;
+      gap: 0px;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      justify-content:center;
+      height: 100%;
+    }
+  
+    .nav__item{
+      padding: 5px 0px;
+      border-bottom: 1px solid #ccc;
+      margin-bottom: 16px;
+      min-width: 44px;
+      min-height: 44px;
+    }
+    
+   .nav__item a {
+    color: #333;
+    text-decoration: none;
+    min-width: 44px;
+    min-height: 44px;
+    }
+  
+    .hero__title{
+      font-size: 20px;
+    }
+  
+    .hero__tagline{
+      font-size: 14px;
+    }
+    
+    p.hero__tagline{
+      padding-right: 0;
+    }
+  
+    img.img1{
+      width: 70vw;
+    }
+
+    h2.restaurant_name {
+      font-size: 26px;
+    }
+
+    .restaurant__info #menu{
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .restaurant__info #menu h4{
+      font-size: 18px;
+    }
+
+    .restaurant__info .review-list{
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      gap: 10px;
+    }
+
+    footer p{
+      display: flex;
+      justify-content: center;
+      padding: 0;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .hero {
+      background: url('../public/images/heros/hero-image_2-small.jpg');
+      background-position: center;
+      background-size: cover;
+    }
+  }
+  
+  @media screen and (min-width: 601px) and (max-width: 800px) {
+    .hero {
+      background: url('../public/images/heros/hero-image_2-large.jpg') fixed;
+      background-position: center;
+      background-size: auto;
+    }
+  }
